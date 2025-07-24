@@ -23,17 +23,19 @@ body, html {
 }
 
 .gradient-overlay-xs {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 40px 0;
   background: linear-gradient(
     to bottom,
     #0f172a 0%,
     #0f172a 65%,
     #A0FF3E 100%
   );
-  z-index: 1;
+  min-height: 80vh; /* ensures it fills the screen */
+  box-sizing: border-box;
 }
 
 .gradient-overlay-md {
